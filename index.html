@@ -103,11 +103,73 @@
       color: #34495e;
     }
 
-    section.experience > h3 {
-      margin-top: 2rem;
-      border-left: 4px solid #2980b9;
-      padding-left: 10px;
+    section.experience {
+      margin-top: 40px;
+    }
+
+    section.experience > h2 {
+      border-bottom: 3px solid #2980b9;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+      color: #2c3e50;
+    }
+
+    section.experience h3 {
+      margin-top: 30px;
+      margin-bottom: 15px;
+      border-left: 5px solid #2980b9;
+      padding-left: 12px;
+      font-weight: 700;
       color: #2980b9;
+    }
+
+    section.experience ul {
+      list-style: disc;
+      padding-left: 20px;
+      margin-bottom: 20px;
+      color: #444;
+      line-height: 1.5;
+    }
+
+    section.experience ul.sub-list {
+      list-style: circle;
+      padding-left: 18px;
+      margin-top: 8px;
+      margin-bottom: 8px;
+      color: #555;
+    }
+
+    details {
+      margin-left: 20px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    details summary {
+      font-weight: 600;
+      color: #2980b9;
+      list-style: none;
+      outline: none;
+      user-select: none;
+    }
+
+    details[open] summary::after {
+      content: "▲";
+      float: right;
+      font-size: 0.8rem;
+      color: #555;
+    }
+
+    details summary::after {
+      content: "▼";
+      float: right;
+      font-size: 0.8rem;
+      color: #555;
+    }
+
+    details ul.sub-list {
+      margin-top: 6px;
+      padding-left: 18px;
     }
   </style>
 </head>
@@ -202,37 +264,16 @@
             <li>SPD</li>
             <li>Q3</li>
             <li>RA 측정기</li>
-            <li>Vernier Callipers</li>
-            <li>저울</li>
-          </ul>
-        </details>
-        <details>
-          <summary>측정 사항 (4종)</summary>
-          <ul class="sub-list">
-            <li>미세먼지 (Particle)</li>
-            <li>표면거칠기 (Roughness, Ra)</li>
-            <li>두께 (Thickness)</li>
-            <li>무게 (Weight)</li>
+            <li>Vernier Caliper</li>
+            <li>표준저울</li>
           </ul>
         </details>
       </li>
-      <li>아이디어 제안
-        <ul class="sub-list">
-          <li>Jig 도입 → 불량률 66% 감소</li>
-          <li>Teflon 소재 제안 → 제품 손상 감소</li>
-          <li>Oven 공간 확보 위한 적층형 구조 제안</li>
-          <li>불필요한 공정(HOT D/I, COOL D/I) 제거 → 공정시간 33% 단축 (90초 → 60초)</li>
-          <li>후처리 자동화(컨베이어벨트 아이디어제안)로 인한 업무 효율 2배 (작업인원 2인 → 1인)</li>
-          <li>반출 우선순위 변경으로 TAT 달성</li>
-        </ul>
-      </li>
-      <li>문서화 작업
-        <ul class="sub-list">
-          <li>정기회의내용, 제품 SPEC, 아이디어제안 테스트 결과 문서화</li>
-          <li>이상 발생 시 대응 및 재발 방지 문서화</li>
-        </ul>
-      </li>
+      <li>생산라인 불량 확인 및 보고서 작성</li>
+      <li>출하 검수 및 수출 서류 작성</li>
+      <li>품질문서 관리 및 개선사항 전달</li>
     </ul>
+
   </section>
 
 </body>
