@@ -50,6 +50,13 @@
       line-height: 1.5;
     }
 
+    .sub-list {
+      padding-left: 20px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      list-style-type: disc;
+    }
+
     hr {
       border: none;
       border-top: 1px solid #ccc;
@@ -72,7 +79,6 @@
       text-decoration: underline;
     }
 
-    /* 프로젝트 카드 스타일 */
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -97,11 +103,6 @@
       color: #34495e;
     }
 
-    .project-card ul {
-      margin-top: 8px;
-    }
-
-    /* 경력 상세 섹션 스타일 */
     section.experience > h3 {
       margin-top: 2rem;
       border-left: 4px solid #2980b9;
@@ -126,9 +127,9 @@
 
   <h2>About Me</h2>
   <ul>
-    <li><strong>폭넓은 경험과 유연한 사고방식</strong><br/>패션디자인, 서비스직, 생산직 등 다양한 분야에서의 경험</li>
-    <li><strong>소통과 공감의 힘</strong><br/>협업을 즐기며, 갈등 상황에서도 원활한 커뮤니케이션을 중시</li>
-    <li><strong>꾸준한 실행력과 도전정신</strong><br/>실전 프로젝트와 포트폴리오 완성으로 역량 증명</li>
+    <li><strong>폭넓은 경험과 유연한 사고방식</strong>: 패션디자인, 서비스직, 생산직 등 다양한 분야에서의 경험</li>
+    <li><strong>소통과 공감의 힘</strong>: 협업을 즐기며, 갈등 상황에서도 원활한 커뮤니케이션 중시</li>
+    <li><strong>꾸준한 실행력과 도전정신</strong>: 실전 프로젝트와 포트폴리오 완성으로 역량 증명</li>
   </ul>
 
   <p><strong>저는 문제 해결에 즐거움을 느끼는 개발자, 사람을 연결하는 개발자가 되고 싶습니다.</strong></p>
@@ -149,17 +150,16 @@
   <hr/>
 
   <h2>Projects</h2>
-  <p></p>
+  <div class="projects">
+    <a href="https://leetaeyoungg.github.io/bikeriding.html" target="_blank" rel="noopener noreferrer" class="project-card">
+      <h3>부트캠프 최종 프로젝트 : BikeRiding</h3>
+      <ul>
+        <li>2025.04 - 2025-05 1달간 진행</li>
+        <li>기획, 설계부터 개발, 배포까지 완료</li>
+      </ul>
+    </a>
+  </div>
 
- <div class="projects">
-  <a href="https://leetaeyoungg.github.io/bikeriding.html" target="_blank" rel="noopener noreferrer" class="project-card">
-    <h3>부트캠프 최종 프로젝트 : BikeRiding</h3>
-    <ul>
-      <li>2025.04 - 2025-05 1달간 진행</li>
-      <li>기획,설계부터 개발 그리고 배포까지 마무리</li>
-    </ul>
-  </a>
-</div>
   <hr/>
 
   <section class="experience">
@@ -167,76 +167,72 @@
 
     <h3>📌 백엔드 개발자 부트캠프</h3>
     <ul>
-    <li><strong>WEB 제작에 필요한 프로그램 교육</strong>
-      <ul class="sub-list">
-        <li>HTML, JavaScript, JQuery</li>
-        <li>Java, SpringBoot</li>
-        <li>MySQL</li>
-      </ul>
-    </li>
-    <li><strong>OPEN API 활용한 실습 프로젝트 (2일간 진행)</strong>
-      <ul class="sub-list">
-        <li>스켈레톤 프로젝트: OPEN API를 활용한 관광명소 <strong>MySQL DB 구축</strong></li>
-        <li>웹 미니 프로젝트: OPEN API를 활용한 <strong>웹 제작</strong></li>
-      </ul>
-    </li>
-    <li><strong>최종 프로젝트 (1달간 진행)</strong><br>
-      SpringBoot, HTML, JavaScript를 이용한 다양한 기능 구현 → <strong>홈페이지 제작</strong>
-    </li>
-  </ul>
+      <li>WEB 제작에 필요한 기술 교육
+        <ul class="sub-list">
+          <li>HTML, JavaScript, JQuery</li>
+          <li>Java, SpringBoot</li>
+          <li>MySQL</li>
+        </ul>
+      </li>
+      <li>OPEN API 활용 실습 프로젝트
+        <ul class="sub-list">
+          <li>OPEN API로 관광명소 DB 구축</li>
+          <li>웹 미니 프로젝트로 웹 제작</li>
+        </ul>
+      </li>
+      <li>최종 프로젝트: SpringBoot, HTML, JavaScript를 활용한 홈페이지 제작</li>
+    </ul>
 
     <h3>📌 인터켐코리아 :: Customer Service</h3>
     <ul>
-      <li>고객 상담 및 제품 계약 관련 서비스</li>
-      <li>제품 SPEC 안내 및 컴플레인 대응</li>
-      <li>전국에 존재하는 자사제품 거래처 출장 서비스 및 유지보수</li>
+      <li>고객 상담 및 제품 계약 서비스</li>
+      <li>SPEC 안내 및 컴플레인 대응</li>
+      <li>전국 거래처 출장 유지보수</li>
     </ul>
 
-    <h3>📌 (주)코미코 :: Qulity Control</h3>
+    <h3>📌 (주)코미코 :: Quality Control</h3>
     <ul>
-  <details>
-  <summary><strong>제품검사</strong></summary>
-  <ul class="sub-list">
-    <li>제품 외부 육안검사</li>
-    <li>측정장비를 이용한 제품 실측</li>
-    <li>사용한 측정장비:
-      <ul class="sub-list">
-        <li>SPD</li>
-        <li>Q3</li>
-        <li>RA 측정기</li>
-        <li>Vernier Callipers</li>
-        <li>저울</li>
-      </ul>
-    </li>
-    <li>측정 사항:
-      <ul class="sub-list">
-        <li>미세먼지 (Particle)</li>
-        <li>표면거칠기 (Roughness, Ra)</li>
-        <li>두께 (Thickness)</li>
-        <li>무게 (Weight)</li>
-      </ul>
-    </li>
-  </ul>
-</details>
-
-  <li><strong>아이디어 제안</strong>
-    <ul class="sub-list">
-      <li>불량률이 높은 제품에 대해 Jig(제품 받침대) 사용 제안 → 불량률 66% 감소 (3% → 1%)</li>
-      <li>Jig 제작 시 Teflon 소재 사용 제안 → 제품 손상 최소화 및 품질 개선</li>
-      <li>다층형 및 가로식 적층형 Jig 거치 형태 제안 → Oven 공간 4~10배 확보</li>
-      <li>불필요한 공정(HOT D/I, COOL D/I) 제거 → 공정시간 33% 감소 (90초 → 60초)</li>
-      <li>후처리 자동화 제안 → 컨베이어벨트 도입으로 1인이 2인의 업무 수행 가능</li>
-      <li>반출 우선순위 변경 아이디어 제안 → 팀 목표 TAT 달성</li>
+      <li>제품검사
+        <ul class="sub-list">
+          <li>외부 육안검사 및 실측</li>
+        </ul>
+        <details>
+          <summary>사용한 측정장비 (5종)</summary>
+          <ul class="sub-list">
+            <li>SPD</li>
+            <li>Q3</li>
+            <li>RA 측정기</li>
+            <li>Vernier Callipers</li>
+            <li>저울</li>
+          </ul>
+        </details>
+        <details>
+          <summary>측정 사항 (4종)</summary>
+          <ul class="sub-list">
+            <li>미세먼지 (Particle)</li>
+            <li>표면거칠기 (Roughness, Ra)</li>
+            <li>두께 (Thickness)</li>
+            <li>무게 (Weight)</li>
+          </ul>
+        </details>
+      </li>
+      <li>아이디어 제안
+        <ul class="sub-list">
+          <li>Jig 도입 → 불량률 66% 감소</li>
+          <li>Teflon 소재 제안 → 제품 손상 감소</li>
+          <li>Oven 공간 확보 위한 적층형 구조 제안</li>
+          <li>공정시간 33% 단축</li>
+          <li>후처리 자동화로 업무 효율 2배</li>
+          <li>반출 우선순위 변경으로 TAT 달성</li>
+        </ul>
+      </li>
+      <li>문서화 작업
+        <ul class="sub-list">
+          <li>회의, 제품 SPEC, 테스트 문서화</li>
+          <li>이상 발생 시 대응 및 재발 방지 문서화</li>
+        </ul>
+      </li>
     </ul>
-  </li>
-
-  <li><strong>문서화 작업</strong>
-    <ul class="sub-list">
-      <li>회의 내용, 제품 SPEC, 테스트 내용 문서화</li>
-      <li>제품 이상 발생 시 대처 및 재발 방지 대책 문서화</li>
-    </ul>
-  </li>
-</ul>
   </section>
 
 </body>
